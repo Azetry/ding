@@ -1,0 +1,11 @@
+# cache
+__pycache__
+
+# tokens
+ding-b2817-firebase-adminsdk-mnrt2-de0637d349.json
+
+# other
+.DS_Store
+
+# environment
+.env
