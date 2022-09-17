@@ -22,11 +22,11 @@ app.include_router(api_routes)
 
 if __name__ == "__main__":
     # Local WSGI: Uvicorn
-    port = int(os.getenv("PORT", 8000))
+    # port = int(os.getenv("PORT", 8000))
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
-        port=port,
+        # port=port,
         # workers=4,
         # log_level="info",
         # access_log=True,
