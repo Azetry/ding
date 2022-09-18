@@ -56,6 +56,6 @@ def message_text(event) -> None:
     user_id = event.source.user_id
     user_message = event.message.text
 
-    msg = chatbot.response(user_message)
+    msg = chatbot.response(user_id, user_message)
     messages = TextSendMessage(text=msg)
     line_bot_api.reply_message(reply_token=reply_token, messages=messages)
