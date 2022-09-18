@@ -32,7 +32,7 @@ class ChatBot:
         )
         
         # add
-        ref = self.orm.get_user(user_id)
+        ref = self.orm.get_todolist(user_id)
         _time, _doc = ref.add(item.dict())
 
         return "Added."
