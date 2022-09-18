@@ -6,7 +6,7 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import *
 
 import config
-import chatbot 
+from chatbot import ChatBot
 
 
 
@@ -14,6 +14,8 @@ line_bot_api = LineBotApi(config.LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(config.LINE_CHANNEL_SECRET)
 
 api_routes = APIRouter()
+
+chatbot = ChatBot()
 
 
 @api_routes.post("/callback")
