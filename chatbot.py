@@ -15,7 +15,7 @@ class ChatBot:
     # main
     def response(self, msg):
         # check is command
-        if self.is_cmd(msg): return self.cmd_list[self.get_cmd(msg)]
+        if self.is_cmd(msg): return self.cmd_list[self.get_cmd(msg)]()
 
         return msg
 
