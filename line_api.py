@@ -52,7 +52,7 @@ def message_text(event) -> None:
     """
     reply_token = event.reply_token
 
-    # Get user sent message
+    # Get user sent message .
     user_id = event.source.user_id
     user_message = event.message.text
 
